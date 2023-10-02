@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05徐馨蕾_bear</title>
+  <style>
+    /* 大黑圓 */
+    .circular {
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background-color: #000;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* 腮紅 左 */
+    .circular::before {
+      content: "";
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background-color: #f00;
+      position: absolute;
+      left: -5%;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    /* 腮紅 右 */
+    .circular::after {
+      content: "";
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background-color: #f00;
+      position: absolute;
+      right: -5%;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    /* 嘴巴 白 */
+    .boxCenter {
+      width: 300px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* 嘴巴 大黑 */
+    .boxCenter::before {
+      content: "";
+      width: 180px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: #000;
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%);
+    }
+
+    /* 嘴巴 小黑 */
+    .boxCenter::after {
+      content: "";
+      width: 60px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #000;
+      position: absolute;
+      left: 50%;
+      top: 15%;
+      transform: translate(-50%);
+    }
+
+
+    /* 眼白 左 */
+    .boxEye {
+      width: 115px;
+      height: 115px;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      left: 22%;
+      top: 15%;
+    }
+
+    /* 眼白 右 */
+    .boxEye::before {
+      content: "";
+      width: 115px;
+      height: 115px;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      left: 185%;
+    }
+
+    /* 眼黑 左 */
+    .boxEye::after {
+      content: "";
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background-color: #000;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* 眼黑 右 */
+    .boxEye2 {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background-color: #000;
+      position: absolute;
+      left: 61%;
+      top: 18.5%;
+    }
+
+    /* 右耳 黑 */
+    .boxEye2::before {
+      content: "";
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background-color: #000;
+      position: absolute;
+      left: 74%;
+      top: -150%;
+    }
+
+    /* 左耳 黑 */
+    .boxEar {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background-color: #000;
+      position: absolute;
+      left: 14%;
+      top: -0.2%;
+    }
+
+    /* 左耳 白 */
+    .boxEar::before {
+      content: "";
+      width: 49px;
+      height: 49px;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* 右耳 白 */
+    .boxEar::after {
+      content: "";
+      width: 49px;
+      height: 49px;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      left: 500%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .v {
+      width: 300px;
+      height: 100px;
+      background-color: #fff;
+      position: absolute;
+      left: 50%;
+      top: 73%;
+      transform: translate(-50%);
+    }
+
+    .v::before {
+      content: "";
+      width: 0px;
+      height: 0;
+
+      border-left: 65px solid transparent;
+      border-right: 65px solid transparent;
+      border-top: 65px solid #000;
+
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    .v2 {
+      width: 0;
+      height: 0;
+
+      border-top: 100px solid transparent;
+      border-left: 90px solid #000;
+    }
+
+    .v2::after {
+      content: "";
+      width: 0;
+      height: 0;
+
+      border-top: 100px solid transparent;
+      border-right: 90px solid #000;
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="circular">
+    <div class="boxCenter"></div>
+    <div class="boxEye"></div>
+    <div class="boxEye2"></div>
+    <div class="boxEar"></div>
+    <div class="v">
+      <div class="v2"></div>
+    </div>
+
+  </div>
+</body>
+
+</html>
